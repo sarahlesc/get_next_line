@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 16:18:18 by slescure          #+#    #+#             */
-/*   Updated: 2020/11/23 15:53:12 by slescure         ###   ########.fr       */
+/*   Updated: 2020/11/30 21:54:37 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	get_next_line(int fd, char **line)
 		}
 	*line = get_line(save);
 	save = get_rest(save);
-	if (r == -1)
+	if (r < 0)
 		return (-1);
 	if (r == 0)
 		return (0);
