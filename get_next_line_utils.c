@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:49:38 by slescure          #+#    #+#             */
-/*   Updated: 2020/11/21 00:07:27 by slescure         ###   ########.fr       */
+/*   Updated: 2020/11/30 22:16:42 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,11 @@ char	*get_rest(char *str)
 		return (NULL);
 	while (str[i] != '\n' && str[i] != '\0')
 		i++;
+	if (str[i] == '\0')
+	{
+		free(rest);
+		return (NULL);
+	}
 	i++;
 	while (str[i] != '\0')
 	{
