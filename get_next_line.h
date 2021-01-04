@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:23:17 by slescure          #+#    #+#             */
-/*   Updated: 2020/11/20 21:19:09 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/02 18:18:58 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 # include <sys/types.h>
 # include <fcntl.h>
 
-int 		get_next_line(int fd, char **line);
-size_t		ft_strlen(char *s);
-char		*ft_strchr(char *str, int c);
-char		*get_rest(char *str);
-char		*ft_strjoin(char *s1, char *s2);
-char		*get_line(char *str);
+int		get_next_line(int fd, char **line);
+size_t	ft_strlen(char *s);
+char	*ft_strchr(char *str, int c);
+char	*get_rest(char *str);
+char	*ft_strjoin(char *s1, char *s2);
+char	*get_line(char *str);
 
 #endif

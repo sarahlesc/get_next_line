@@ -6,15 +6,15 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:49:38 by slescure          #+#    #+#             */
-/*   Updated: 2020/12/02 23:11:11 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/02 18:15:49 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(char *s)
+size_t		ft_strlen(char *s)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (s == NULL)
@@ -24,7 +24,7 @@ size_t	ft_strlen(char *s)
 	return (i);
 }
 
-char	*ft_strchr(char *str, int c)
+char		*ft_strchr(char *str, int c)
 {
 	unsigned int	i;
 
@@ -40,11 +40,11 @@ char	*ft_strchr(char *str, int c)
 	return (NULL);
 }
 
-char	*get_rest(char *str)
+char		*get_rest(char *str)
 {
-	char *rest;
-	int i;
-	int j;
+	char	*rest;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;
@@ -69,11 +69,11 @@ char	*get_rest(char *str)
 	return (rest);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char		*ft_strjoin(char *s1, char *s2)
 {
-	size_t	i;
-	size_t	j;
-	char	*dest;
+	size_t		i;
+	size_t		j;
+	char		*dest;
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
@@ -90,11 +90,11 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (dest);
 }
 
-char	*get_line(char *str)
+char		*get_line(char *str)
 {
-	int i;
-	int n;
-	char *rslt;
+	int		i;
+	int		n;
+	char	*rslt;
 
 	i = 0;
 	n = 0;
