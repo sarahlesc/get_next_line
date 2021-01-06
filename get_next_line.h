@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:23:17 by slescure          #+#    #+#             */
-/*   Updated: 2021/01/06 14:44:08 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/06 16:46:16 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
+#  define BUFFER_SIZE 300
 # endif
 
 # include <stdio.h>
