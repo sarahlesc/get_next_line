@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:49:38 by slescure          #+#    #+#             */
-/*   Updated: 2021/01/02 18:15:49 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/06 14:23:37 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ char		*ft_strjoin(char *s1, char *s2)
 	dest = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (dest == NULL)
 		return (NULL);
+	dest[ft_strlen(s1) + ft_strlen(s2)] = 0;
 	i = -1;
 	while (s1[++i] != '\0')
 		dest[i] = s1[i];

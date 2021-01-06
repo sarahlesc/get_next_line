@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:23:17 by slescure          #+#    #+#             */
-/*   Updated: 2021/01/02 18:18:58 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/06 14:44:08 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 32
+#  define BUFFER_SIZE 5
 # endif
 
+# include <stdio.h>
+# include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
-# include <sys/stat.h>
-# include <sys/types.h>
-# include <fcntl.h>
 
 int		get_next_line(int fd, char **line);
 size_t	ft_strlen(char *s);
