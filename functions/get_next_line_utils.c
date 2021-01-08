@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 15:49:38 by slescure          #+#    #+#             */
-/*   Updated: 2021/01/06 16:44:17 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/07 19:05:00 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ size_t		ft_strlen(char *s)
 	if (s == NULL)
 		return (0);
 	while (s[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }
 

@@ -6,7 +6,7 @@
 /*   By: slescure <slescure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 16:18:18 by slescure          #+#    #+#             */
-/*   Updated: 2021/01/06 15:04:46 by slescure         ###   ########.fr       */
+/*   Updated: 2021/01/08 11:10:17 by slescure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@ int	ret(char **save, char **line, char **tmp, int r)
 {
 	*line = get_line(*save);
 	*tmp = *save;
-	*save = get_rest(*save);
+	*save = get_rest(*tmp);
 	free(*tmp);
 	if (r < 0)
 		return (-1);
 	if (r > 0)
 		return (1);
+	free(*save);
+	*save = NULL;
 	return (0);
 }
 
@@ -35,7 +37,7 @@ int	get_next_line(int fd, char **line)
 	r = 1;
 	if (!save)
 	{
-		if (!(save = malloc(sizeof(char) * 1)))
+		if (!(save = malloc(sizeof(char) * 2)))
 			return (-1);
 		save[0] = '\0';
 	}
