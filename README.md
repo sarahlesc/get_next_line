@@ -12,4 +12,4 @@ CONTENU DU REPO :
 
 :arrow_right: FUNCTIONS : contient les fonctions du programme + les bonus
 
-:arrow_right: TESTER : contient des fichiers texte ainsi qu'un main pour pouvoir tester les fonctions. Le main contient volontairement une boucle infini pour tester les leaks.
+:arrow_right: TESTER : contient des fichiers texte ainsi qu'un main pour pouvoir tester les fonctions. Le main contient volontairement une boucle infinie pour tester les leaks.
